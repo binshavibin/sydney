@@ -1,0 +1,12 @@
+2021-07-01T14:34:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function show_admin_bar(), 0 passed in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 6 and exactly 1 expected in C:\xampp\htdocs\sydney\wp-includes\admin-bar.php:1178
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php(6): show_admin_bar()
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#2 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#5 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\sydney\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\sydney\index.php(17): require( in C:\xampp\htdocs\sydney\wp-includes\admin-bar.php on line 1178
+
