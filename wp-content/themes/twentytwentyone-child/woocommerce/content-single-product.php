@@ -31,7 +31,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<!-- <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>> -->
 
 	<?php
 	/**
@@ -43,7 +43,11 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
+	<div class="col-12 col-lg-7">
+		<div class="single_product_desc">
+            <!-- Product Meta Data -->
+            <div class="product-meta-data">
+            	<div class="line"></div>
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
@@ -57,8 +61,13 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_template_single_sharing - 50
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
+		//
+		/*do_action( 'woocommerce_template_single_price' );
+		do_action( 'woocommerce_template_single_title' );*/
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+	</div>
+</div>
 	</div>
 
 	<?php
@@ -71,6 +80,6 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
-</div>
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

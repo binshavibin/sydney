@@ -24,7 +24,10 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( '', $product ); ?>>
+<div class="col-12 col-sm-6 col-md-12 col-xl-6">
+    <div class="single-product-wrapper">
+ <div class="product-img">
+
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -46,7 +49,18 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
+?>
+</div>
+ <div class="product-description d-flex align-items-center justify-content-between">
+ <div class="product-meta-data">
+ <div class="line"></div>
+ 	
+<?php
+
 	do_action( 'woocommerce_shop_loop_item_title' );
+
+	?>
+<?php
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
@@ -56,6 +70,20 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item_title' );
 
+
+?>
+</div>
+</div>
+ <div class="ratings-cart text-right">
+ 	<div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
 	 *
@@ -64,4 +92,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-</li>
+</div>
+
+</div>
+</div>
+</div>

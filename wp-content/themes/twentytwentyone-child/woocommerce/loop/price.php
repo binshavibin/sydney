@@ -23,5 +23,5 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price"><?php echo $price_html; ?></span>
+	 <p class="product-price"><?php echo get_woocommerce_currency_symbol().' '.$product->get_sale_price(); ?></p>
 <?php endif; ?>

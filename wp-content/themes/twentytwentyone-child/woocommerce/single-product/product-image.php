@@ -36,20 +36,55 @@ $wrapper_classes   = apply_filters(
 	)
 );
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
+ <div class="col-12 col-lg-7">
+	<div class="single_product_thumb">
+            <div id="product_details_slider" class="carousel slide" data-ride="carousel">
+                
 		<?php
+		 $html =''; $listhtml='';
 		if ( $post_thumbnail_id ) {
-			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+			
+			$listhtml .=' <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url('.get_the_post_thumbnail_url($product->ID ) .');">
+                                    </li>';
+            $html.= '<div class="carousel-item active"><a class="gallery_img" href="'.get_the_post_thumbnail_url($product->ID ).'">
+                    <img class="d-block w-100" src="'.get_the_post_thumbnail_url($product->ID ).'" alt="First slide">
+                </a></div>';
+
+			
 		} else {
-			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
-			$html .= '</div>';
+			
+			$listhtml .=' <li class="" data-target="#product_details_slider" data-slide-to="0" style="background-image: url('.esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ).');">
+                                    </li>';
+            $html.= '<div class="carousel-item active"><a class="gallery_img" href="'.wc_placeholder_img_src('woocommerce_single' ).'">
+                    <img class="d-block w-100" src="'.wc_placeholder_img_src('woocommerce_single' ).'" alt="First slide">
+                </a></div>';
+
 		}
 
-		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+		
+$attachment_ids = $product->get_gallery_image_ids();
 
-		do_action( 'woocommerce_product_thumbnails' );
+if ( $attachment_ids && $product->get_image_id() ) {
+	foreach ( $attachment_ids as $attachment_id ) {
+        $listhtml .= '<li class="" data-target="#product_details_slider" data-slide-to="0" style="background-image: url('.esc_url( wp_get_attachment_url( $attachment_id ) ).');">
+                                    </li>';
+           $html.='<div class="carousel-item"><a class="gallery_img" href="'.wp_get_attachment_url('woocommerce_single' ).'">
+                    <img class="d-block w-100" src="'.wp_get_attachment_url('woocommerce_single' ).'" alt="First slide">
+                </a></div>';
+
+		/*echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id );*/ // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+	}
+}
 		?>
-	</figure>
+		<ol class="carousel-indicators">
+			<?php echo $listhtml; ?>
+                </ol>
+                 <div class="carousel-inner">
+                 	<?php echo $html; ?>
+                 </div>
+	
+</div>
+</div>
+	<!-- </figure> -->
+<!-- </div> -->
 </div>
