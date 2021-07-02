@@ -7,7 +7,7 @@ function sydney_add_woocommerce_support() {
     	show_admin_bar( true );
 	}
 }
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+//remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 add_filter('woocommerce_product_related_posts_query', '__return_empty_array', 100);
 add_action( 'after_setup_theme', 'sydney_add_woocommerce_support' );
 function woocommerce_template_loop_product_title() {
