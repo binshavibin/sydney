@@ -1,0 +1,2 @@
+# sydney
+Woocommerce theme
