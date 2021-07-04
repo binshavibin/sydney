@@ -1,0 +1,18 @@
+2021-07-03T06:27:02+00:00 CRITICAL Cannot use [] for reading in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 47
+
+2021-07-03T06:34:25+00:00 CRITICAL Assignments can only happen to writable values in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 45
+
+2021-07-03T06:35:45+00:00 CRITICAL syntax error, unexpected ''required'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 39
+
+2021-07-03T06:39:07+00:00 CRITICAL syntax error, unexpected '$fields' (T_VARIABLE) in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 41
+
+2021-07-03T07:19:32+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\page-checkout.php on line 73
+
+2021-07-03T13:54:26+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product\title.php on line 26
+
+2021-07-03T14:17:21+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security/lib/icon-fonts/load.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security\better-wp-security.php on line 42
+
+2021-07-03T14:17:26+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security/lib/icon-fonts/load.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security\better-wp-security.php on line 42
+
+2021-07-03T14:17:26+00:00 CRITICAL require(): Failed opening required 'C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security/lib/icon-fonts/load.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\sydney\wp-content\plugins\better-wp-security\better-wp-security.php on line 42
+

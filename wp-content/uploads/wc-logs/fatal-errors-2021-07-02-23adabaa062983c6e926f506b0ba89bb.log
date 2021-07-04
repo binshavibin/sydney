@@ -1,0 +1,43 @@
+2021-07-02T02:19:54+00:00 CRITICAL syntax error, unexpected '}' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product\product-image.php on line 54
+
+2021-07-02T02:29:01+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product\product-thumbnails.php on line 34
+
+2021-07-02T02:34:49+00:00 CRITICAL syntax error, unexpected '*' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product\product-image.php on line 52
+
+2021-07-02T05:59:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\content-single-product.php on line 65 and at least 2 expected in C:\xampp\htdocs\sydney\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\content-single-product.php(65): add_action('woocommerce_tem...')
+#1 C:\xampp\htdocs\sydney\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sydney\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#3 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product.php(45): wc_get_template_part('content', 'single-product')
+#4 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\inde in C:\xampp\htdocs\sydney\wp-includes\plugin.php on line 409
+
+2021-07-02T06:05:01+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:20
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): wdm_add_custom_fields('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\content-single-product.php(67): do_action('woocommerce_sin...')
+#4 C:\xampp\htdocs\sydney\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\single-product.php(45): wc_get_template_part('content', 'single-product')
+#7 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include('C:\\xampp\\ in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 20
+
+2021-07-02T06:55:29+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\index.php on line 28
+
+2021-07-02T07:59:40+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\loop\add-to-cart.php on line 37
+
+2021-07-02T08:00:06+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\loop\add-to-cart.php on line 38
+
+2021-07-02T08:00:10+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\woocommerce\loop\add-to-cart.php on line 38
+
+2021-07-02T14:21:08+00:00 CRITICAL Uncaught Error: Call to undefined function have_post() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\page.php:3
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sydney\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\page.php on line 3
+

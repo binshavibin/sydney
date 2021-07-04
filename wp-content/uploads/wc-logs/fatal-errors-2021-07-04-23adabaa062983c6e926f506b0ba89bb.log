@@ -1,0 +1,115 @@
+2021-07-04T02:11:34+00:00 CRITICAL Uncaught Error: Call to undefined function add_options_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:12:05+00:00 CRITICAL Uncaught Error: Call to undefined function add_options_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\sydney\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:15:28+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:15:28+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:15:28+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:15:29+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php:10
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(292): sydney_add_woocommerce_support('')
+#1 C:\xampp\htdocs\sydney\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\sydney\wp-settings.php(538): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\sydney\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\sydney\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\functions.php on line 10
+
+2021-07-04T02:45:26+00:00 CRITICAL Uncaught Error: Call to undefined function echoget_field() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\footer.php:31
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\sydney\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\page-cart.php(147): get_footer()
+#4 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\footer.php on line 31
+
+2021-07-04T02:45:45+00:00 CRITICAL Uncaught Error: Call to undefined function echoget_field() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\footer.php:31
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\sydney\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\sydney\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\index.php(51): get_footer()
+#4 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sydney\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\footer.php on line 31
+
+2021-07-04T06:41:51+00:00 CRITICAL Uncaught Error: Call to undefined function auto_shorcode() in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\archive-product.php:3
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sydney\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\archive-product.php on line 3
+
+2021-07-04T06:42:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\archive-product.php on line 3 and exactly 2 expected in C:\xampp\htdocs\sydney\wp-includes\shortcodes.php:63
+Stack trace:
+#0 C:\xampp\htdocs\sydney\wp-content\themes\twentytwentyone-child\archive-product.php(3): add_shortcode('[woof autosubmi...')
+#1 C:\xampp\htdocs\sydney\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sydney\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\sydney\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\sydney\wp-includes\shortcodes.php on line 63
+
