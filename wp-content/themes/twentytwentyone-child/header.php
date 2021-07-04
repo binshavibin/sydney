@@ -70,11 +70,15 @@
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="product-details.html">Product</a></li>
-                    <li><a href="<?php echo site_url(); ?>/cart">Cart</a></li>
-                    <li><a href="<?php echo site_url(); ?>/checkout">Checkout</a></li>
+                    <?php 
+                        wp_nav_menu(
+  array(
+    'menu' => 'Main Menu',
+    'container_class' => 'my_extra_menu_class'
+  )
+);
+                    ?>
+                    
                 </ul>
             </nav>
             <!-- Button Group -->

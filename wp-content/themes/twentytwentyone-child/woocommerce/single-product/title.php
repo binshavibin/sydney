@@ -18,5 +18,16 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+global $product;
+the_title( '<a href="#"><h6>', '</h6></a>' );
+//do_action('woocommerce_after_product_title');
+//$product = wc_get_product( $id );
+?>
+<div class="rating-custom">
+    <?php wc_get_template( 'single-product/rating.php' ); ?>
+</div>
+<?php
 
-the_title( '<h6>', '</h6>' );
+the_content(' <div class="short_overview my-5">',
+                              
+                            '</div>');

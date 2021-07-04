@@ -29,29 +29,41 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
-
+            	<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+                <div class="row">
+                	
+<!--  -->
+	 <div class="col-12 col-lg-8">
+                        <div class="checkout_details_area mt-50 clearfix">
+                        	 <div class="cart-title">
+                                <h2>Checkout</h2>
+                            </div>
+ <div class="row">
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-		<div class="col2-set" id="customer_details">
-			<div class="col-1">
+		
+			
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
-			</div>
+			
 
-			<div class="col-2">
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-			</div>
-		</div>
+			
 
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 	<?php endif; ?>
-	
+</div>
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 	
-	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+	
+
+</div>
+</div>
+ <div class="col-12 col-lg-4">
+                        <div class="cart-summary">
+ <h5>Cart Total</h5>
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
@@ -61,6 +73,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
-</form>
 
+</div>
+</form>
+</div>
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+</div>

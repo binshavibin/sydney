@@ -25,8 +25,9 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 	/* translators: %s: Quantity. */
-	$label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : esc_html__( 'Quantity', 'woocommerce' );
+	$label = esc_html__( 'Quantity', 'woocommerce' );
 	?>
+	<div class="cart-btn d-flex mb-50">
 	<div class="quantity">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
 		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
@@ -45,5 +46,6 @@ if ( $max_value && $min_value === $max_value ) {
 			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
 		<?php do_action( 'woocommerce_after_quantity_input_field' ); ?>
 	</div>
+</div>
 	<?php
 }

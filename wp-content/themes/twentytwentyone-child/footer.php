@@ -4,8 +4,8 @@
                 <!-- Newsletter Text -->
                 <div class="col-12 col-lg-6 col-xl-7">
                     <div class="newsletter-text mb-100">
-                        <h2>Subscribe for a <span>25% Discount</span></h2>
-                        <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+                        <h2><?php echo get_field('subscription_heading','option'); ?></h2>
+                        <p><?php echo get_field('subscribe_message','option'); ?></p>
                     </div>
                 </div>
                 <!-- Newsletter Form -->
@@ -28,7 +28,7 @@
                     <div class="single_widget_area">
                         <!-- Logo -->
                         <div class="footer-logo mr-50">
-                            <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/core-img/logo2.png" alt=""></a>
+                            <a href="index.html"><img src="<?php echo get_field('footer_logo','option'); ?>" alt=""></a>
                         </div>
                         <!-- Copywrite Text -->
                         <p class="copywrite"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -45,6 +45,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                                 <div class="collapse navbar-collapse" id="footerNavContent">
                                     <ul class="navbar-nav ml-auto">
+                                         
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">Home</a>
                                         </li>

@@ -18,27 +18,32 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="woocommerce-billing-fields">
+
 	
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 
-	<div class="woocommerce-billing-fields__field-wrapper">
+	
 		<?php
 		$fields = $checkout->get_checkout_fields( 'billing' );
-
-		foreach ( $fields as $key => $field ) {
-			echo '  <div class="row">
-                                    <div class="col-md-6 mb-3">';
+		$sln =0;
+		foreach ( $fields as $key => $field ) { 
+			$class ='col-md-12';
+			if($sln ==0 || $sln ==1 || $sln==6 || $sln==7 || $sln==8 || $sln ==9){
+				$class ='col-md-6';
+			} 
+			echo '  
+               <div class="'.$class.' mb-3">';
 
 			woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-			echo '</div></div>';
+			echo '</div>';
+			$sln++;
 		}
 		?>
-	</div>
+	
 
 	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
-</div>
+
 
 <?php if ( ! is_user_logged_in() && $checkout->is_registration_enabled() ) : ?>
 	<div class="woocommerce-account-fields">

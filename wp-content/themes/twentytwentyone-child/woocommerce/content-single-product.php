@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="col-12 col-lg-7">
+	<div class="col-12 col-lg-5">
 		<div class="single_product_desc">
             <!-- Product Meta Data -->
             <div class="product-meta-data">
