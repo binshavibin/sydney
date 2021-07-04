@@ -75,13 +75,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 </div>
 </div>
  <div class="ratings-cart text-right">
- 	<div class="ratings">
+ 	<!-- <div class="ratings">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
-                                    </div>
+                                    </div> -->
                                     <div class="cart">
 <?php
 	/**

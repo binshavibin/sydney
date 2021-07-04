@@ -20,7 +20,7 @@
             <div class="amado-pro-catagory clearfix">
                 <?php 
                
-                $posts = get_posts(array('numberposts'=>10,'post_type'=>'product'));
+                $posts = get_posts(array('numberposts'=>6,'post_type'=>'product','order_by'=>'desc'));
             //   print_r($posts);die();
                     foreach($posts as $post) { 
                         $price = get_post_meta( $post->ID, '_sale_price', true);
